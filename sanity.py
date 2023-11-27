@@ -33,7 +33,7 @@ from zoedepth.utils.config import get_config
 from pprint import pprint
 
 
-torch.hub.help("intel-isl/MiDaS", "DPT_BEiT_L_384", force_reload=True) 
+torch.hub.help("intel-isl/MiDaS", "DPT_BEiT_L_384", force_reload=False) 
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 if DEVICE == "cpu":
